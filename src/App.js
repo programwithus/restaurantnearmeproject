@@ -11,7 +11,7 @@ class App extends Component {
 
   componentDidMount() {
     axios
-      .get("https://164.90.128.51/restaurants")
+      .get("http://164.90.128.51/restaurants")
       .then((response) => this.setState({ places: response.data }));
   }
 
